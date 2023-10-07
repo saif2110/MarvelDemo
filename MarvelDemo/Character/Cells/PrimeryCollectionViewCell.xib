@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PrimeryCollectionViewCell" customModule="MarvelDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="173" height="186"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="173" height="186"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YkN-OW-pRu">
+                        <rect key="frame" x="0.0" y="0.0" width="173" height="186"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IpD-X8-hdg">
+                        <rect key="frame" x="0.0" y="156" width="173" height="30"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="0.85673634109999997" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="THA-QA-MiX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="IpD-X8-hdg" secondAttribute="bottom" id="DOz-5E-S84"/>
+                <constraint firstAttribute="bottom" secondItem="YkN-OW-pRu" secondAttribute="bottom" id="Rs9-4j-8Vc"/>
+                <constraint firstItem="IpD-X8-hdg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bTt-fG-FDc"/>
+                <constraint firstItem="YkN-OW-pRu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="g37-ST-FEC"/>
+                <constraint firstAttribute="trailing" secondItem="YkN-OW-pRu" secondAttribute="trailing" id="gOq-ZB-H0q"/>
+                <constraint firstItem="YkN-OW-pRu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qby-kn-LIb"/>
+                <constraint firstAttribute="trailing" secondItem="IpD-X8-hdg" secondAttribute="trailing" id="xkb-CH-51P"/>
+            </constraints>
+            <size key="customSize" width="173" height="186"/>
+            <connections>
+                <outlet property="charImage" destination="YkN-OW-pRu" id="Uxv-vA-Yg5"/>
+                <outlet property="charName" destination="IpD-X8-hdg" id="bMg-Fw-hYc"/>
+            </connections>
+            <point key="canvasLocation" x="-2.2900763358778624" y="67.605633802816911"/>
+        </collectionViewCell>
+    </objects>
+</document>
